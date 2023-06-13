@@ -17,5 +17,19 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('CountryInfoSoapService/GetListCountriesByName'))
+response = WS.sendRequest(findTestObject('CountryInfoSoapService/GetListCountriesByName'))
+
+String xml = response.responseBodyContent
+
+def dataValue = new XmlSlurper().parseText(xml)
+
+def countryCode = dataValue.ListOfCountryNamesByNameResult.tCountryCodeAndName[2].sISOCode.text()
+
+println('... The country code is: ' + countryCode)
+
+GlobalVariable.countryCode = countryCode
+
+println('... The global variable is: ' + GlobalVariable.countryCode)
+
+WS.sendRequest(findTestObject('CountryInfoSoapService/GetCapital'))
 

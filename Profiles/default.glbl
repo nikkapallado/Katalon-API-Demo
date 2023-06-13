@@ -7,7 +7,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'AL'</initValue>
-      <name>pHCountryCode</name>
+      <name>countryCode</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

@@ -39,7 +39,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.pHCountryCode</defaultValue>
+      <defaultValue>GlobalVariable.null</defaultValue>
       <description></description>
       <id>2701a875-f420-426a-800f-f96f5011ac56</id>
       <masked>false</masked>
