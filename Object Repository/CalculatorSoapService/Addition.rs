@@ -60,6 +60,7 @@ assertThat(response.getStatusCode()).isEqualTo(200)
 assertThat(response.getResponseText()).contains('AddResult')
 
 
-WS.verifyElementPropertyValue(response, 'AddResponse.AddResult', '6')</verificationScript>
+WS.verifyElementPropertyValue(response, 'AddResponse.AddResult', '6')
+WS.verifyElementText(response, 'AddResponse.AddResult', '6')</verificationScript>
    <wsdlAddress>https://ecs.syr.edu/faculty/fawcett/Handouts/cse775/code/calcWebService/Calc.asmx?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

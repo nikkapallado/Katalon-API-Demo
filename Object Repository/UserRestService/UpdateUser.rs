@@ -3,7 +3,7 @@
    <description></description>
    <name>UpdateUser</name>
    <tag></tag>
-   <elementGuidId>cc6a30c1-0f54-471a-b0cd-b69db6ad3407</elementGuidId>
+   <elementGuidId>07cbba71-f23b-4caf-96e0-72d6f81c5976</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>false</autoUpdateContent>
@@ -11,7 +11,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;morpheus\&quot;,\n    \&quot;job\&quot;: \&quot;zion resident\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;${userName}\&quot;,\n    \&quot;job\&quot;: \&quot;zion resident\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,7 +22,7 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>401141a8-d743-45fd-8888-1189fcde46c6</webElementGuid>
+      <webElementGuid>17395359-fda8-43d1-93a4-e11acb850c4a</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
@@ -37,6 +37,13 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>GlobalVariable.userName</defaultValue>
+      <description></description>
+      <id>78aa9cde-f276-42a0-b172-0fdf95c56c9b</id>
+      <masked>false</masked>
+      <name>userName</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -54,6 +61,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 200)
 
-assertThat(response.getStatusCode()).isEqualTo(200)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(200)
+WS.verifyElementPropertyValue(response, 'name', &quot;George&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
