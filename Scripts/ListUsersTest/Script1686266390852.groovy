@@ -25,7 +25,7 @@ WS.verifyElementPropertyValue(response, 'data[0].first_name', 'Michael')
 
 WS.verifyElementPropertyValue(response, 'data[2].id', '9')
 
-WS.verifyElementsCount(response, 'data', 4)
+WS.verifyElementsCount(response, 'data', 6)
 
 WS.verifyResponseStatusCodeInRange(response, 100, 200)
 
