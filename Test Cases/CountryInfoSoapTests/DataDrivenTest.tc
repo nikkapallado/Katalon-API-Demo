@@ -5,22 +5,31 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>51deecdc-1dac-4d19-8b8e-b50a0b672f9a</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>875ccd16-4774-4852-ae72-7aa16c84dfb3</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/CountryInfoSoapService/CountryInfoSoapTestData</testDataId>
+   </testDataLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>875ccd16-4774-4852-ae72-7aa16c84dfb3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>countryCode</value>
       <variableId>2a6ad2ec-b5e1-4496-973b-d8a199241f86</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>875ccd16-4774-4852-ae72-7aa16c84dfb3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>capital</value>
       <variableId>ecb9ac03-3bcd-4dde-996d-4b84edbb8ef4</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>875ccd16-4774-4852-ae72-7aa16c84dfb3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>currency</value>
       <variableId>7e9e6412-6984-4da1-9414-1b46bb1a7671</variableId>
    </variableLinks>
    <variable>
