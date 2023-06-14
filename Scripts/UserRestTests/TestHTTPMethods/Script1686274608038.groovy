@@ -21,7 +21,7 @@ WS.sendRequestAndVerify(findTestObject('UserRestService/CreateUser'))
 
 WS.sendRequestAndVerify(findTestObject('UserRestService/UpdateUser'))
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'))
+WS.sendRequestAndVerify(findTestObject('UserRestService/ListUser'))
 
 WS.sendRequestAndVerify(findTestObject('UserRestService/DeleteUser'))
 
