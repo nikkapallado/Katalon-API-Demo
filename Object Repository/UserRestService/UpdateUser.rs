@@ -62,6 +62,6 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
-WS.verifyElementPropertyValue(response, 'name', &quot;George&quot;)</verificationScript>
+WS.verifyElementPropertyValue(response, 'name', &quot;Alex&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

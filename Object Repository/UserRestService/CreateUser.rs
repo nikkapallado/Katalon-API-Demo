@@ -54,6 +54,7 @@ ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
 WS.verifyResponseStatusCode(response, 201)
 
-assertThat(response.getStatusCode()).isEqualTo(201)</verificationScript>
+assertThat(response.getStatusCode()).isEqualTo(201)
+WS.verifyElementPropertyValue(response, 'name', &quot;morpheus&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
