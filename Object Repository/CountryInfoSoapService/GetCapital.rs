@@ -39,7 +39,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.null</defaultValue>
+      <defaultValue>GlobalVariable.countryCode</defaultValue>
       <description></description>
       <id>2701a875-f420-426a-800f-f96f5011ac56</id>
       <masked>false</masked>
@@ -58,6 +58,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Tirana')</verificationScript>
+WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Tirana')
+</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>DataDrivenTesting</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>d3a626f3-b7c5-4df9-bad2-9b46e93c6d3d</testSuiteGuid>
+   <testCaseLink>
+      <guid>9effb2ea-a308-47e2-bf16-01535d06c008</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CountryInfoSoapTests/DataDrivenTest</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>74021fbd-fc69-495d-bbf7-37c0902cbf9a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CountryInfoSoapService/CountryInfoSoapTestData</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>74021fbd-fc69-495d-bbf7-37c0902cbf9a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>countryCode</value>
+         <variableId>2a6ad2ec-b5e1-4496-973b-d8a199241f86</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>74021fbd-fc69-495d-bbf7-37c0902cbf9a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>capital</value>
+         <variableId>ecb9ac03-3bcd-4dde-996d-4b84edbb8ef4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>74021fbd-fc69-495d-bbf7-37c0902cbf9a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>currency</value>
+         <variableId>7e9e6412-6984-4da1-9414-1b46bb1a7671</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
