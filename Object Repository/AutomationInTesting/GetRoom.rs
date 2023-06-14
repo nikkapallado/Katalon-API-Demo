@@ -38,6 +38,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+WS.verifyElementPropertyValue(response, 'rooms[0].roomid', 1)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

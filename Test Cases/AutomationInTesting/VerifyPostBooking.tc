@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>VerifyPostBooking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8798b61b-3e47-4ecc-8078-a78823986488</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>db0cc4ce-5dd5-47a2-af07-24a90e7ffa5b</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/AutomationInTesting/AutomationInTestingTestData</testDataId>
+   </testDataLinks>
+</TestCaseEntity>
